@@ -19,53 +19,109 @@
             border-bottom: 1px solid #eee;
             padding-bottom: 10px;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
         .language-container {
             display: flex;
             justify-content: center;
             gap: 40px;
-            margin-top: 40px;
+            margin-top: 20px;
         }
         .language-box {
             border: 1px solid #e0e0e0;
             border-radius: 8px;
-            padding: 30px;
+            padding: 20px;
             width: 200px;
+            text-align: center;
+            transition: all 0.3s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
         }
         .language-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
+        .language-box img {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 10px;
+        }
+        .language-box h3 {
+            margin: 0;
+            color: #2c3e50;
             font-size: 18px;
+            margin-bottom: 10px;
         }
-        a:hover {
-            text-decoration: underline;
+        .language-box a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            padding: 8px 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
         }
-        p {
+        .language-box a:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            margin-top: 50px;
             color: #7f8c8d;
-            margin-top: 15px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>SpeakIt / 语录宝 Privacy Policies</h1>
+    <h1>SpeakIt / 语录宝</h1>
+    <p>Welcome to the SpeakIt app resources page. Here you can find our privacy policy and support information in different languages.</p>
     
-    <div class="language-container">
-        <div class="language-box">
-            <a href="privacy_policy_en.html">English Privacy Policy</a>
-            <p>For English-speaking users</p>
+    <div class="container">
+        <div class="section">
+            <h2>Privacy Policy</h2>
+            <div class="language-container">
+                <div class="language-box">
+                    <h3>English</h3>
+                    <p>Our English privacy policy</p>
+                    <a href="privacy_policy_en.html">View</a>
+                </div>
+                <div class="language-box">
+                    <h3>中文</h3>
+                    <p>我们的中文隐私政策</p>
+                    <a href="privacy_policy_zh.html">查看</a>
+                </div>
+            </div>
         </div>
         
-        <div class="language-box">
-            <a href="privacy_policy_zh.html">中文隐私政策</a>
-            <p>面向中文用户</p>
+        <div class="section">
+            <h2>Support</h2>
+            <div class="language-container">
+                <div class="language-box">
+                    <h3>English</h3>
+                    <p>Get help in English</p>
+                    <a href="support_en.html">Support</a>
+                </div>
+                <div class="language-box">
+                    <h3>中文</h3>
+                    <p>获取中文帮助</p>
+                    <a href="support_zh.html">技术支持</a>
+                </div>
+            </div>
         </div>
     </div>
-    
+
+    <div class="footer">
+        <p>© 2025 SpeakIt. All rights reserved.</p>
+    </div>
 </body>
 </html> 
